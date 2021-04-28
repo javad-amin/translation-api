@@ -33,5 +33,7 @@ Done, now to set a new translation post JSON object to http://localhost:3000/api
 ```
 
 To check all translations visit: http://localhost:3000/api/translate/
+
 To query all records from a specific language, like all english records by: http://localhost:3000/api/translate/en/all
+
 To query a single record like buy-chips: http://localhost:3000/api/translate/en/?key=buy-chips
