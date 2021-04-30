@@ -1,14 +1,12 @@
 # Simple instruction for testing the code.
 
-Run the following commands to install the packages:
+Run the following command to install the packages:
 
 ```
 npm install
 ```
 
-Create a database in mysql.
-
-Source the envirement variables:
+Create a database in mysql and then source the envirement variables:
 
 ```
 cp .env-setup-example .env-setup
@@ -22,7 +20,13 @@ Initilize the empty database:
 cat init-db.sql | mysql -u USERNAME -p DBNAME
 ```
 
-Done, now to set a new translation post JSON object to http://localhost:3000/api/translate/ like:
+To run the node app use:
+
+```
+npm run dev
+```
+
+now to set a new translation post a JSON object in the body to http://localhost:3000/api/translate/:
 
 ```
 {

@@ -43,12 +43,11 @@ router.post('/', async (req, res, next) => {
         res.sendStatus(500);
     }
 });
-router.delete('/', async (req, res, next) => {
+router.delete('/:lang', async (req, res, next) => {
     try {
-        let result = await db.delTranslation(req.body.lang, req.body.key);
+        let result = await db.delTranslation(req.params.lang, req.query.key);
         res.json(result)
     } catch(e) {
-
         console.log(e);
         res.sendStatus(500);
     }
